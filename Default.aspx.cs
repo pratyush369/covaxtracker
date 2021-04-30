@@ -22,12 +22,7 @@ public partial class _Default : System.Web.UI.Page
     protected void B_click(object sender, EventArgs e)
     {
         
-        String Constr = @"Data Source = localhost; Initial Catalog = testdb1; User ID = demo; Password = demo";
-        SqlConnection conn = new SqlConnection(Constr);
-        conn.Open();
-        String strtemp = Rname.Text;
-        Label1.Text = strtemp;
-        conn.Close();
+        
     }
 
     

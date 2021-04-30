@@ -30,17 +30,18 @@
     <section class="body">    
     <form id="form1" runat="server" action="response1.aspx" method="post" >
         <div style="text-align:center;">
-            <label style ="padding-top:10px;">Name: </label>
+
+            <label style ="padding-top:10px;">Name</label>
             <asp:TextBox runat="server" type="text" id="Rname"/><br/><br/>
             <asp:RequiredFieldValidator ControlToValidate="Rname" Display="Dynamic" ErrorMessage="Enter Name" ForeColor="Red" ID="req1" runat="server" ValidationGroup="Save"></asp:RequiredFieldValidator>
-            <label>Flat no.: </label>
+            <label>Flat no.</label>
             <asp:TextBox runat="server" type="text" id="Fno"/><br/><br/>
-            <label>Date Of Birth:</label>
+            <label>Date Of Birth</label>
             <asp:TextBox ID="Dob" runat="server" type="date" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>'></asp:TextBox>  
             <br />
             <br/>
             <label></label>
-            <label>Vaccine Name: </label><br/>
+            <label>Vaccine Name</label><br/>
             <asp:DropDownList ID="Vactype" runat="server">
             <asp:ListItem value="value" selected="False">  
               COVISHIELD
@@ -60,7 +61,8 @@
             <br />
             <br/>
             &nbsp;
-            <asp:Button ID="Button2" runat="server" OnClick="B_click" PostBackUrl="~/response1.aspx" Text="Register" CausesValidation="False"/>
+            <input type='button' id='resetButton' value='Reset' onclick='form1.reset();return false;'/>
+            <asp:Button ID="Button2" runat="server" PostBackUrl="~/response1.aspx" Text="Register" CausesValidation="False"/>
             
             
         </div>
