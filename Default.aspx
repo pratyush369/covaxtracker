@@ -18,17 +18,18 @@
             </h2>       
             </div>
     <div class="float-left">
-    </div>
         <h1>COVID-19 Vaccination Progress Tracker</h1>
+    </div>
+        
     </header>
-    <div class="featured">
+    <section class="featured">
         <div class="content-wrapper">
         <h1>Registration for Members</h1>
     </div>
-    </div>
+    </section>
     <section class="body">    
     <form id="form1" runat="server">
-        <div style="text-align:center">
+        <div style="text-align:center;">
             <label style ="padding-top:10px;">Name: </label>
             <asp:TextBox runat="server" type="text" id="Rname"/><br/><br/>
             <asp:RequiredFieldValidator ControlToValidate="Rname" Display="Dynamic" ErrorMessage="Enter Name" ForeColor="Red" ID="req1" runat="server" ValidationGroup="Save"></asp:RequiredFieldValidator>
@@ -38,8 +39,7 @@
             <label>Date Of Birth:</label>
             <asp:TextBox ID="Dob" runat="server" type="date" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>'></asp:TextBox>  
             <br />
-            <br />
-            <br/><br/>
+            <br/>
             <label></label>
             <label>Vaccine Name: </label><br/>
             <select id ="vactype">
