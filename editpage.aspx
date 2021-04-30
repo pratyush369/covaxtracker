@@ -55,13 +55,13 @@
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                <asp:BoundField DataField="flat" HeaderText="flat" ReadOnly="True" SortExpression="flat" />
-                <asp:BoundField DataField="rname" HeaderText="rname" SortExpression="rname" />
-                <asp:BoundField DataField="dob" HeaderText="dob" SortExpression="dob" />
-                <asp:BoundField DataField="vacname" HeaderText="vacname" SortExpression="vacname" />
-                <asp:BoundField DataField="dose1" HeaderText="dose1" SortExpression="dose1" />
-                <asp:BoundField DataField="dose2" HeaderText="dose2" SortExpression="dose2" />
-                <asp:BoundField DataField="doa" HeaderText="doa" SortExpression="doa" />
+                <asp:BoundField DataField="flat" HeaderText="Flat Number" ReadOnly="True" SortExpression="flat" />
+                <asp:BoundField DataField="rname" HeaderText="Name" SortExpression="rname" />
+                <asp:BoundField DataField="dob" HeaderText="Date Of Birth" SortExpression="dob" />
+                <asp:BoundField DataField="vacname" HeaderText="Vaccination Type" SortExpression="vacname" />
+                <asp:BoundField DataField="dose1" HeaderText="Is Dose one administered?" SortExpression="dose1" />
+                <asp:BoundField DataField="dose2" HeaderText="Is Dose two administered?" SortExpression="dose2" />
+                <asp:BoundField DataField="doa" HeaderText="Date Of Administration" SortExpression="doa" />
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
