@@ -46,7 +46,6 @@ public partial class Default2 : System.Web.UI.Page
         String connstr = @"Data Source = localhost; Initial Catalog = covinfodb; User ID = demo; Password = demo";
         SqlConnection conn = new SqlConnection(connstr);
         conn.Open();
-        String sql = "Insert Into table1 Values(@fno,@name,@dob,@vactype,@d1,@d2,@doa);";
         SqlCommand sqlCommand = new SqlCommand("Insert Into table1 Values(@fno,@name,@dob,@vactype,@d1,@d2,@doa);", conn);
         sqlCommand.Parameters.AddWithValue("fno", fno);
         sqlCommand.Parameters.AddWithValue("name", name);

@@ -50,6 +50,7 @@ mark {
 
 .float-right {
     float: right;
+    padding-bottom:10px;
 }
 
 .clear-fix:after {

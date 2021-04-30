@@ -9,7 +9,22 @@
     <link rel="stylesheet" href="defaultstyle.css" />
 </head>
 <body>
-    <header></header>
+    <form id="form1" runat="server">
+    <header>
+        <br />
+        <div class="float-right">
+            <h2><a href="home.aspx">Home</a>
+            <a href="Default.aspx">New Member</a>
+            <a href="stats.aspx">Current Status</a>
+            </h2>       
+            </div>
+    <div class="float-left">
+        <h1>COVID-19 Vaccination Progress Tracker</h1>
+    </div>
+        <div class="content-wrapper"><h3>New User Succesfully Registered!</h3><br /></div>
+        
+        
+        </header>
 <div class="content-wrapper">
         <label>Name:&nbsp; </label> 
         <asp:Label id="namedis" runat="server">
@@ -44,7 +59,10 @@
         Date of Administration:</label>&nbsp;  
         <asp:Label id="doadis" runat="server">
         </asp:Label>
+        <br />
+        <br />
     </div>
     <footer></footer>
+    </form>
 </body>
 </html>
