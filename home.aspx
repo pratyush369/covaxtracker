@@ -25,14 +25,17 @@
     </div>
     </div>
     <section class="body">    
-    <form id="form2" runat="server">
+    <form id="form2" runat="server" action="editpage.aspx">
         <div style="text-align:center;">
        <label>
            To Update Your Information Verify your Information
        </label>
         <br/><br/>
-        <label>Flat No.</label>&nbsp&nbsp<input type="number" />
-        <label>Date Of Birth</label>&nbsp&nbsp<input type="date" /><br /> <br />
+        <label>Flat No.</label>&nbsp&nbsp<asp:TextBox ID="Etext" runat="server"></asp:TextBox>
+        <label>Date Of Birth</label>&nbsp&nbsp<input type="date" /><br />
+            <asp:Button ID="searchbutton" runat="server" Text="Button" PostBackUrl="editpage.aspx" />
+            <br />
+            <br /> <br />
     </div>
     </form>
     </section>

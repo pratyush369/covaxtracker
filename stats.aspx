@@ -27,12 +27,12 @@
     </section>
     <section class="body">
         <form runat="server">
-        <asp:GridView ID="statgrid" runat="server" AutoGenerateColumns="false">
+        <asp:GridView ID="statgrid" runat="server" AutoGenerateColumns="false" >
+
             <Columns>
                 
                 <asp:BoundField DataField="flat" HeaderText="Flat Number" ItemStyle-Width="150" />
                 <asp:BoundField DataField="rname" HeaderText="Name of Recepient" ItemStyle-Width="150" />
-                <asp:BoundField DataField="dob" HeaderText="Date Of Birth" ItemStyle-Width="150" />
                 <asp:BoundField DataField="vacname" HeaderText="Vaccine Type" ItemStyle-Width="150" />
                 <asp:BoundField DataField="dose1" HeaderText="Dose 1 Administered?" ItemStyle-Width="150" />
                 <asp:BoundField DataField="dose2" HeaderText="Dose 2 Administered?" ItemStyle-Width="150" />
