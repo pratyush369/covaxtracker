@@ -28,8 +28,7 @@ public partial class _Default : System.Web.UI.Page
         String strtemp = Rname.Text;
         Label1.Text = strtemp;
         conn.Close();
-
-        
-
     }
+
+    
 }

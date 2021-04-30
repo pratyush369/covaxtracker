@@ -28,42 +28,39 @@
     </div>
     </section>
     <section class="body">    
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" action="response1.aspx" method="post" >
         <div style="text-align:center;">
             <label style ="padding-top:10px;">Name: </label>
             <asp:TextBox runat="server" type="text" id="Rname"/><br/><br/>
             <asp:RequiredFieldValidator ControlToValidate="Rname" Display="Dynamic" ErrorMessage="Enter Name" ForeColor="Red" ID="req1" runat="server" ValidationGroup="Save"></asp:RequiredFieldValidator>
             <label>Flat no.: </label>
-            <input type="text" id="model"/><br />
-            <br />
+            <asp:TextBox runat="server" type="text" id="Fno"/><br/><br/>
             <label>Date Of Birth:</label>
             <asp:TextBox ID="Dob" runat="server" type="date" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>'></asp:TextBox>  
             <br />
             <br/>
             <label></label>
             <label>Vaccine Name: </label><br/>
-            <select id ="vactype">
-                <option>
-                    COVISHIELD
-                </option>
-                <option>
-                    COWAXIN
-                </option>
-                <option>
-                    Other
-                </option>
-            </select><br/><br/>
-            <label>Dose One  </label>
-            <input id="Dose1" type="checkbox"  /><br /><br />
+            <asp:DropDownList ID="Vactype" runat="server">
+            <asp:ListItem value="value" selected="False">  
+              COVISHIELD
+            </asp:ListItem>
+            <asp:ListItem value="value" selected="False">  
+              COVAXIN
+            </asp:ListItem>
+            </asp:DropDownList>
+            <br/><br/>
+            <label >Dose One  </label>
+            <asp:CheckBox ID="Dose1" runat="server" /><br /><br />
             <label>Dose Two  </label>
-            <input id="Dose2" type="checkbox"  /><br />
+            <asp:CheckBox ID="Dose2" runat="server" /><br />
             <br />
             <label>Date of Administration</label><br/>
             <asp:TextBox ID="Doa" runat="server" type="date" Text='<%# Bind("DateofAdministration", "{0:yyyy-MM-dd}") %>'></asp:TextBox>
             <br />
             <br/>
-         
-            &nbsp;<asp:Button ID="Button2" runat="server" OnClick="B_click" Text="Register" CausesValidation="False"/>
+            &nbsp;
+            <asp:Button ID="Button2" runat="server" OnClick="B_click" PostBackUrl="~/response1.aspx" Text="Register" CausesValidation="False"/>
             
             
         </div>
