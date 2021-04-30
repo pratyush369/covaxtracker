@@ -17,7 +17,7 @@ public partial class Default2 : System.Web.UI.Page
             tb2 = (TextBox)PreviousPage.FindControl("Edob");
             SqlDataSource1.FilterExpression = string.Format("flat = '{0}' and dob = '{1}'", tb.Text,tb2.Text);
         }
-        else
+    else
         {
             SqlDataSource1.FilterExpression = string.Format("flat = '{0}' and dob = '{1}'", tb.Text, tb2.Text);
         }

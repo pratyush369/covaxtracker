@@ -47,7 +47,10 @@ mark {
 .float-left {
     float: left;
 }
-
+.GridViewEditRow input[type=text] {
+    width: 70px;
+    font-size: .9em
+} 
 .float-right {
     float: right;
     padding-bottom:10px;
@@ -219,7 +222,6 @@ ul#menu {
 
     .featured .content-wrapper {
         background-color: #7ac0da;
-        background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
         background-image: -webkit-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
@@ -252,7 +254,6 @@ hgroup.title {
 
 /* features */
 section.feature {
-    width: 300px;
     float: left;
     padding: 10px;
 }
