@@ -65,10 +65,13 @@ h4, h5, h6 {
     color: #000;
     margin-bottom: 0;
     padding-bottom: 0;
+    text-align:center;
 }
 
 h1 {
     font-size: 2em;
+    height: 141px;
+    margin-top: 93px;
 }
 
 h2 {

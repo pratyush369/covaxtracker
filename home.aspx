@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Home</title>
-    <link rel="stylesheet" href="defaultstyle.css">
+    <link rel="stylesheet" href="defaultstyle.css" />
 </head>
     <body>
 <header>
