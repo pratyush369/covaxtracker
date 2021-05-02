@@ -28,12 +28,18 @@
     <form id="form2" runat="server" action="editpage.aspx">
         <div style="text-align:center;">
        <label>
-           To Update Your Information<br />Verify Identity<br />
+            <br />
+           To update or search your information<br />
+            <br />Please verify your identity<br />
        </label>
         <br/><br/>
-        <label>Flat No.</label>&nbsp&nbsp<asp:TextBox ID="Etext" runat="server"></asp:TextBox>
-        <label>Date Of Birth</label>&nbsp&nbsp<asp:TextBox ID="Edob" runat="server" type="date" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>'></asp:TextBox>  <br />
-            <asp:Button ID="searchbutton" runat="server" Text="Button" PostBackUrl="editpage.aspx" />
+        <label>Flat No.<br />
+            </label>&nbsp&nbsp<asp:TextBox ID="Etext" runat="server"></asp:TextBox>
+        <label>Date Of Birth<br />
+            </label>&nbsp&nbsp<asp:TextBox ID="Edob" runat="server" type="date" Text='<%# Bind("DateofBirth", "{0:yyyy-MM-dd}") %>'></asp:TextBox>  
+            <br />
+            <br />
+            <asp:Button ID="searchbutton" runat="server" Text="Submit" PostBackUrl="editpage.aspx" OnClick="searchbutton_Click" />
             <br />
             <br /> <br />
     </div>

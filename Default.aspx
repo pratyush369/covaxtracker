@@ -68,6 +68,5 @@
         </div>
     </form>
     </section>
-    <asp:label ID="Label1" runat="server"></asp:label>
-</body>
+    </body>
 </html>

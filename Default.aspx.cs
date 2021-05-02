@@ -13,10 +13,7 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
-        {
-            Label1.Text = "Connecting!!!!";
-        }
+        
         
     }
     protected void B_click(object sender, EventArgs e)

@@ -13,7 +13,7 @@ public partial class Default2 : System.Web.UI.Page
     {
         String connstr = @"Data Source = localhost; Initial Catalog = covinfodb; User ID = demo; Password = demo";
         SqlConnection conn = new SqlConnection(connstr);
-        SqlCommand cmd = new SqlCommand("select * from table1;", conn);
+        SqlCommand cmd = new SqlCommand("select * from table2;", conn);
         conn.Open();
         SqlDataAdapter sda = new SqlDataAdapter(cmd);
         DataSet ds = new DataSet();
